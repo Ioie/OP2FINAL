@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false">
+
+    <ImageView
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:id="@+id/imageViewPoster"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/button_material_light" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_alignTop="@+id/imageViewPoster"
+        android:layout_toRightOf="@+id/imageViewPoster"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/button_material_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Batman Begins"
+            android:id="@+id/textViewTitle"
+            android:layout_alignTop="@+id/imageViewPoster"
+            android:layout_toRightOf="@+id/imageViewPoster"
+            android:layout_toEndOf="@+id/imageViewPoster"
+            android:background="@color/abc_secondary_text_material_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="2015"
+            android:id="@+id/textViewYear"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_alignLeft="@+id/textViewTitle"
+            android:layout_alignStart="@+id/textViewTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Movie"
+            android:id="@+id/textViewType"
+            android:layout_alignTop="@+id/linearLayout2"
+            android:layout_alignLeft="@+id/textViewYear"
+            android:layout_alignStart="@+id/textViewYear" />
+    </LinearLayout>
+</LinearLayout>
